@@ -1,0 +1,103 @@
+<div
+  class="main-container vh-100 d-flex justify-content-center align-items-center"
+>
+  <div class="container col-md-8">
+    <app-menu-lateral></app-menu-lateral>
+    <div>
+      <div>
+        <h2 class="mb-5">Editar Coleção</h2>
+      </div>
+      <div>
+        <form action="submit" [formGroup]="myForm">
+          <div class="row">
+            <div class="col-6">
+              <div class="mb-3">
+                <input
+                  type="text"
+                  placeholder="Nome da coleção"
+                  formControlName="nomeColecao"
+                  class="form-control rounded"
+                />
+              </div>
+              <div class="mb-3">
+                <input
+                  type="text"
+                  placeholder="Responsável pela coleção"
+                  formControlName="responsavelColecao"
+                  class="form-control rounded"
+                />
+              </div>
+              <div class="mb-3">
+                <input
+                  type="text"
+                  placeholder="Para qual estação?"
+                  formControlName="estacao"
+                  class="form-control rounded"
+                />
+              </div>
+            </div>
+            <div class="col-6 text-end">
+              <div class="mb-3">
+                <input
+                  type="text"
+                  placeholder="Para qual marca você está criando?"
+                  formControlName="marca"
+                  class="form-control rounded"
+                />
+              </div>
+              <div class="mb-3">
+                <input
+                  type="text"
+                  placeholder="Qual é o orçamento desta coleção"
+                  formControlName="orcamento"
+                  class="form-control rounded"
+                />
+              </div>
+              <div class="mb-3"></div>
+              <div>
+                <input
+                  type="date"
+                  placeholder="Ano de lançamento"
+                  formControlName="anoLancamento"
+                  class="form-control rounded"
+                />
+              </div>
+            </div>
+          </div>
+        </form>
+
+        <div class="img-container text-center">
+          <img
+            src="../../../assets/image 1.png"
+            alt="Imagem de uma mulher com um vestido"
+          />
+        </div>
+        <div class="form-group d-flex justify-content-between mt-4">
+          <div>
+            <button
+              type="button"
+              class="btn btn-secondary btn-block"
+              routerLink="/home"
+            >
+              Cancelar
+            </button>
+            <button
+              type="submit"
+              class="btn btn-primary"
+              (click)="atualizarSubmit()"
+            >
+              Atualizar
+            </button>
+          </div>
+          <button
+            type="button"
+            class="btn btn-primary btn-block"
+            (click)="onClick()"
+          >
+            Excluir
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

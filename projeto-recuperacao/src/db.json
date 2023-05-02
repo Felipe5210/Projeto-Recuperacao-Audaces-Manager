@@ -1,0 +1,60 @@
+{
+  "criarcolecao": [
+    {
+      "nomeColecao": "sick",
+      "responsavelColecao": "sick",
+      "estacao": "sick",
+      "marca": "sick",
+      "orcamento": "2",
+      "anoLancamento": "2102",
+      "id": 648
+    },
+    {
+      "id": 115,
+      "nomeColecao": "sickle2",
+      "responsavelColecao": "sickle2",
+      "estacao": "sickle2",
+      "marca": "sickle2",
+      "orcamento": "2",
+      "anoLancamento": "sickle2"
+    }
+  ],
+  "criarmodelo": [
+    {
+      "nomeModelo": "sickle",
+      "responsavelmodelo": "sickle",
+      "tipoModelo": "Chapéu",
+      "possuiBordado": "sim",
+      "possuiEstampa": "nao",
+      "selecionarColecao": "sick",
+      "id": 1
+    },
+    {
+      "nomeModelo": "sick2",
+      "tipoModelo": "sick2",
+      "selecionarColecao": "sickle2",
+      "responsavelmodelo": "sick2",
+      "possuiBordado": "sick2",
+      "possuiEstampa": "sick2",
+      "id": 2
+    },
+    {
+      "nomeModelo": "Edson",
+      "tipoModelo": "Edson",
+      "selecionarColecao": "sickle2",
+      "responsavelmodelo": null,
+      "possuiBordado": "nao",
+      "possuiEstampa": "sim",
+      "id": 3
+    },
+    {
+      "nomeModelo": "Edson2",
+      "tipoModelo": "Edson2",
+      "selecionarColecao": "sickle2",
+      "responsavelmodelo": null,
+      "possuiBordado": "sim",
+      "possuiEstampa": "nao",
+      "id": 4
+    }
+  ]
+}

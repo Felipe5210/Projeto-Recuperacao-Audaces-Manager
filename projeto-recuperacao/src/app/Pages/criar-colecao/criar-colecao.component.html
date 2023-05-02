@@ -1,0 +1,87 @@
+<div
+  class="main-container vh-100 d-flex justify-content-center align-items-center"
+>
+  <div class="container col-md-8">
+    <h1>Criar coleção</h1>
+    <app-menu-lateral></app-menu-lateral>
+    <form action="submit" [formGroup]="myForm">
+      <div class="row">
+        <div class="col-6">
+          <div class="mb-3">
+            <input
+              type="text"
+              placeholder="Nome da coleção"
+              formControlName="nomeColecao"
+              class="form-control rounded"
+            />
+          </div>
+          <div class="mb-3">
+            <input
+              type="text"
+              placeholder="Responsável pela coleção"
+              formControlName="responsavelColecao"
+              class="form-control rounded"
+            />
+          </div>
+          <div class="mb-3">
+            <input
+              type="text"
+              placeholder="Para qual estação?"
+              formControlName="estacao"
+              class="form-control rounded"
+            />
+          </div>
+        </div>
+        <div class="col-6 text-end">
+          <div class="mb-3">
+            <input
+              type="text"
+              placeholder="Para qual marca você está criando?"
+              formControlName="marca"
+              class="form-control rounded"
+            />
+          </div>
+          <div class="mb-3">
+            <input
+              type="text"
+              placeholder="Qual é o orçamento desta coleção"
+              formControlName="orcamento"
+              class="form-control rounded"
+            />
+          </div>
+          <div class="mb-3"></div>
+          <div>
+            <input
+              type="date"
+              placeholder="Ano de lançamento"
+              formControlName="anoLancamento"
+              class="form-control rounded"
+            />
+          </div>
+        </div>
+      </div>
+    </form>
+    <div class="img-container text-center">
+      <img
+        src="../../../assets/image 1.png"
+        alt="Imagem de uma mulher com um vestido"
+      />
+    </div>
+    <div class="buttons d-flex justify-content-end">
+      <div class="row">
+        <div class="col-6">
+          <button
+            class="btn btn-primary btn-block"
+            type="submit"
+            (click)="onSubmit()"
+          >
+            <span class="text-justify">Salvar</span>
+          </button>
+        </div>
+        <div class="col-6 text-end btn-block">
+          <button class="btn btn-secondary" routerLink="/home">Cancelar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
